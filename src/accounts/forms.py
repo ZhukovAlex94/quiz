@@ -79,3 +79,7 @@ class UserUpdateForm(UserChangeForm):
         )
 
         # widgets = {'birthday': forms.DateInput(attrs={'type': 'date'})}
+
+
+class UserRetryVerification(forms.Form):
+    email = forms.EmailField()
