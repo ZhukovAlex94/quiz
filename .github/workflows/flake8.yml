@@ -20,4 +20,4 @@ jobs:
         pip install -r requirements-dev.txt
     - name: Analysing the code with Flake8
       run: |
-        flake8 srs/
+        flake8 src/
