@@ -11,6 +11,7 @@ from django.views.generic import CreateView
 from django.views.generic import UpdateView
 
 from .forms import UserRegisterForm, UserRetryVerification, UserUpdateForm
+
 from .utils import send_activation_notification, signer
 
 
