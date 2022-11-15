@@ -5,13 +5,13 @@ from django.contrib.auth.views import LoginView
 from django.contrib.auth.views import LogoutView
 from django.core.signing import BadSignature
 from django.shortcuts import get_object_or_404
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView
 from django.views.generic import UpdateView
 
-from .forms import UserRegisterFrom, UserUpdateForm
-from .utils import signer
+from .forms import UserRegisterFrom, UserRetryVerification, UserUpdateForm
+from .utils import send_activation_notification, signer
 
 
 class UserRegisterView(CreateView):
@@ -22,10 +22,27 @@ class UserRegisterView(CreateView):
 
 
 def user_activate(request, sign):
+    if request.method == 'POST':
+        form = UserRetryVerification(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            try:
+                user = get_user_model().objects.get(email__iexact=email)
+            except get_user_model().DoesNotExist:
+                return redirect('accounts:register')
+
+            if user.is_activated:
+                return redirect('password_reset')
+
+            send_activation_notification(user)
+            return redirect('accounts:register_done')
+    else:
+        form = UserRetryVerification()
+
     try:
         username = signer.unsign(sign)
     except BadSignature:
-        return render(request, 'accounts/bad_signature.html')
+        return render(request, 'accounts/bad_signature.html', {'form': form})
 
     user = get_object_or_404(get_user_model(), username=username)
     if user.is_activated:

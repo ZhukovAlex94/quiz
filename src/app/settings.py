@@ -10,8 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
-from pathlib import Path
 from os import environ
+from pathlib import Path
 
 from django.urls import reverse_lazy
 
