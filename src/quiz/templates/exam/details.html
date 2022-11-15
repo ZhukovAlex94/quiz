@@ -28,15 +28,15 @@
                         </tr>
                         <tr>
                             <td>Best result</td>
-                            <td>na</td>
+                            <td> {{ exam.best_result }}</td>
                         </tr>
                         <tr>
                             <td>Best user</td>
-                            <td>N/A</td>
+                            <td> {{ exam.best_user }} </td>
                         </tr>
                         <tr>
                             <td>Last run</td>
-                            <td>N/A</td>
+                            <td> {{ exam.last_run|date:"d.m.Y H:i:s" }} </td>
                         </tr>
                     </tbody>
               </table>
