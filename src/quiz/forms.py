@@ -18,7 +18,7 @@ class QuestionInlineFormSet(forms.BaseInlineFormSet):
         order_nums = {int(form['order_num'].value()) for form in questions}
         if len(order_nums) != len(questions):
             raise ValidationError(
-                f'Found duplication of order num.'
+                'Found duplication of order num.'
             )
         max_order_num = max(order_nums)
         min_order_num = min(order_nums)
@@ -28,7 +28,7 @@ class QuestionInlineFormSet(forms.BaseInlineFormSet):
             )
         if min_order_num != 1 or order_nums != {value for value in range(min_order_num, max_order_num + 1)}:
             raise ValidationError(
-                f'All order_nums should be in sequential order (1, 2, 3, 4, ...)'
+                'All order_nums should be in sequential order (1, 2, 3, 4, ...).'
             )
 
 

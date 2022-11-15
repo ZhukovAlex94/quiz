@@ -132,9 +132,3 @@ class Result(BaseModel):
             self.state = self.STATE.FINISHED
 
         self.save()
-
-
-
-    # def last_run(self, update_timestamp, results):
-    #     x = results.filter(update_timestamp)
-    #     return x[0]
