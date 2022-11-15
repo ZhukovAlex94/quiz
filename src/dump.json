@@ -1,0 +1,2437 @@
+[
+{
+   "model": "quiz.exam",
+   "pk": 1,
+   "fields": {
+      "create_timestamp": "2022-11-12T09:57:18.720Z",
+      "update_timestamp": "2022-11-13T16:37:01.516Z",
+      "uuid": "83e17543-838b-4081-80d1-d964cae0e0e9",
+      "title": "Математика",
+      "description": "Простые тесты",
+      "level": 0
+   }
+},
+{
+   "model": "quiz.exam",
+   "pk": 2,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:06:18.342Z",
+      "update_timestamp": "2022-11-13T16:15:19.265Z",
+      "uuid": "de2a0b56-05cd-4555-9fb8-2c3ff9e2eca1",
+      "title": "Физика",
+      "description": "Викторина по Физике.",
+      "level": 1
+   }
+},
+{
+   "model": "quiz.exam",
+   "pk": 3,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:18:10.205Z",
+      "update_timestamp": "2022-11-13T16:18:10.206Z",
+      "uuid": "c3f1f8b3-0b74-4c62-a8a7-ff367997a975",
+      "title": "География",
+      "description": "Викторина по Географии.",
+      "level": 1
+   }
+},
+{
+   "model": "quiz.exam",
+   "pk": 4,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:30:55.299Z",
+      "update_timestamp": "2022-11-13T16:30:55.299Z",
+      "uuid": "fb7c6db0-bab7-4d2a-bdb1-3a22cc2b2f7e",
+      "title": "Литература",
+      "description": "Викторина по литературе.",
+      "level": 2
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 1,
+   "fields": {
+      "create_timestamp": "2022-11-12T09:57:56.989Z",
+      "update_timestamp": "2022-11-12T09:58:00.613Z",
+      "exam": 1,
+      "order_num": 1,
+      "text": "2 + 2 = ?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 2,
+   "fields": {
+      "create_timestamp": "2022-11-12T09:58:18.522Z",
+      "update_timestamp": "2022-11-12T10:26:50.163Z",
+      "exam": 1,
+      "order_num": 2,
+      "text": "3 + 3 = ?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 3,
+   "fields": {
+      "create_timestamp": "2022-11-12T09:58:39.101Z",
+      "update_timestamp": "2022-11-12T10:26:29.101Z",
+      "exam": 1,
+      "order_num": 3,
+      "text": "5 * 5 = ?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 4,
+   "fields": {
+      "create_timestamp": "2022-11-12T09:58:53.472Z",
+      "update_timestamp": "2022-11-12T10:26:02.256Z",
+      "exam": 1,
+      "order_num": 4,
+      "text": "9 / 9 = ?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 5,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:25:24.670Z",
+      "update_timestamp": "2022-11-13T15:29:24.633Z",
+      "exam": 1,
+      "order_num": 5,
+      "text": "100 / 50 = ?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 6,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:25:24.671Z",
+      "update_timestamp": "2022-11-13T15:29:20.244Z",
+      "exam": 1,
+      "order_num": 6,
+      "text": "25 * 25 = ?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 7,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:25:24.673Z",
+      "update_timestamp": "2022-11-13T15:29:01.664Z",
+      "exam": 1,
+      "order_num": 7,
+      "text": "25^2 = ?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 8,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:25:24.674Z",
+      "update_timestamp": "2022-11-13T15:28:33.134Z",
+      "exam": 1,
+      "order_num": 8,
+      "text": "100  /  0 =?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 9,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:25:24.675Z",
+      "update_timestamp": "2022-11-13T15:28:10.897Z",
+      "exam": 1,
+      "order_num": 9,
+      "text": "22 * 2 = ?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 10,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:25:24.676Z",
+      "update_timestamp": "2022-11-13T15:27:47.426Z",
+      "exam": 1,
+      "order_num": 10,
+      "text": "33 * 9 - 2 = ?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 11,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:25:24.677Z",
+      "update_timestamp": "2022-11-13T15:27:19.551Z",
+      "exam": 1,
+      "order_num": 11,
+      "text": "2 + 2 * 2 = ?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 12,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:25:24.678Z",
+      "update_timestamp": "2022-11-13T15:27:01.272Z",
+      "exam": 1,
+      "order_num": 12,
+      "text": "(125 / 5 * 2 + 99 * 55) / 0 = ?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 13,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:06:18.345Z",
+      "update_timestamp": "2022-11-13T16:14:35.142Z",
+      "exam": 2,
+      "order_num": 1,
+      "text": "Кто получил первую Нобелевская премию по физике?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 14,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:06:18.346Z",
+      "update_timestamp": "2022-11-13T16:13:34.777Z",
+      "exam": 2,
+      "order_num": 2,
+      "text": "Эта женщина в виде исключения дважды была лауреатом Нобелевской премии. Назовите ее.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 15,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:06:18.347Z",
+      "update_timestamp": "2022-11-13T16:12:22.976Z",
+      "exam": 2,
+      "order_num": 3,
+      "text": "Каждые сутки Земля «поправляется» на 400 т. За счет чего?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 16,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:06:18.348Z",
+      "update_timestamp": "2022-11-13T16:11:13.481Z",
+      "exam": 2,
+      "order_num": 4,
+      "text": "Кто создал первый паровой двигатель в мире?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 17,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:06:18.349Z",
+      "update_timestamp": "2022-11-13T16:09:49.381Z",
+      "exam": 2,
+      "order_num": 5,
+      "text": "Что такое диэлектрик для физика?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 18,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:06:18.350Z",
+      "update_timestamp": "2022-11-13T16:09:29.077Z",
+      "exam": 2,
+      "order_num": 6,
+      "text": "«Усиление света в результате вынужденного излучения». Что это?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 19,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:06:18.351Z",
+      "update_timestamp": "2022-11-13T16:08:49.905Z",
+      "exam": 2,
+      "order_num": 7,
+      "text": "Какой термометр появился первым?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 20,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:06:18.352Z",
+      "update_timestamp": "2022-11-13T16:08:10.081Z",
+      "exam": 2,
+      "order_num": 8,
+      "text": "Какой металл является самым тугоплавким?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 21,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:06:18.353Z",
+      "update_timestamp": "2022-11-13T16:12:27.303Z",
+      "exam": 2,
+      "order_num": 9,
+      "text": "Какая жидкость самая легкая?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 22,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:06:18.354Z",
+      "update_timestamp": "2022-11-13T16:12:30.737Z",
+      "exam": 2,
+      "order_num": 10,
+      "text": "Какое поле появляется вокруг любого предмета?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 23,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:18:10.207Z",
+      "update_timestamp": "2022-11-13T16:26:06.801Z",
+      "exam": 3,
+      "order_num": 1,
+      "text": "Самый большой океан?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 24,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:18:10.208Z",
+      "update_timestamp": "2022-11-13T16:25:13.056Z",
+      "exam": 3,
+      "order_num": 2,
+      "text": "На каком материке нет рек?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 25,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:18:10.209Z",
+      "update_timestamp": "2022-11-13T16:24:45.319Z",
+      "exam": 3,
+      "order_num": 3,
+      "text": "Самое глубокое озеро?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 26,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:18:10.210Z",
+      "update_timestamp": "2022-11-13T16:23:03.900Z",
+      "exam": 3,
+      "order_num": 4,
+      "text": "Крупное поместье в Бразилии?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 27,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:18:10.211Z",
+      "update_timestamp": "2022-11-13T16:23:38.924Z",
+      "exam": 3,
+      "order_num": 5,
+      "text": "Туристическое путешествие по воде?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 28,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:18:10.212Z",
+      "update_timestamp": "2022-11-13T16:22:39.872Z",
+      "exam": 3,
+      "order_num": 6,
+      "text": "Справочник о каком-нибудь историческом месте, музее, туристском маршруте?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 29,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:18:10.213Z",
+      "update_timestamp": "2022-11-13T16:22:02.228Z",
+      "exam": 3,
+      "order_num": 7,
+      "text": "В каком море ловят рыбу жители трёх частей света?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 30,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:18:10.214Z",
+      "update_timestamp": "2022-11-13T16:21:27.179Z",
+      "exam": 3,
+      "order_num": 8,
+      "text": "Вращающаяся модель земного шара?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 31,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:18:10.215Z",
+      "update_timestamp": "2022-11-13T16:21:02.680Z",
+      "exam": 3,
+      "order_num": 9,
+      "text": "Надпись на почтовом конверте, указывающая место получателя?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 32,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:18:10.216Z",
+      "update_timestamp": "2022-11-13T16:19:53.611Z",
+      "exam": 3,
+      "order_num": 10,
+      "text": "Область устойчивого пониженного атмосферного давления?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 33,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:18:10.217Z",
+      "update_timestamp": "2022-11-13T16:19:28.012Z",
+      "exam": 3,
+      "order_num": 11,
+      "text": "Газообразная оболочка, окружающая Землю?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 34,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:18:10.218Z",
+      "update_timestamp": "2022-11-13T16:19:01.298Z",
+      "exam": 3,
+      "order_num": 12,
+      "text": "Большое, не заселённое людьми пространство, лишённое растительности?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 35,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:30:55.301Z",
+      "update_timestamp": "2022-11-13T16:36:28.427Z",
+      "exam": 4,
+      "order_num": 1,
+      "text": "Кодовое слово, по которому открывались двери одной подземной сокровищницы?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 36,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:30:55.302Z",
+      "update_timestamp": "2022-11-13T16:35:55.116Z",
+      "exam": 4,
+      "order_num": 2,
+      "text": "Краткий иносказательный рассказ в стихах или прозе с нравоучительным выводом?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 37,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:30:55.303Z",
+      "update_timestamp": "2022-11-13T16:35:28.503Z",
+      "exam": 4,
+      "order_num": 3,
+      "text": "Самый богатый селезень в мире?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 38,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:30:55.304Z",
+      "update_timestamp": "2022-11-13T16:35:02.867Z",
+      "exam": 4,
+      "order_num": 4,
+      "text": "Русский писатель, автор рассказа «Белый пудель»?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 39,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:30:55.306Z",
+      "update_timestamp": "2022-11-13T16:33:59.729Z",
+      "exam": 4,
+      "order_num": 5,
+      "text": "Древнее народное сказание о легендарных героях, богах, о явлениях природы?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 40,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:30:55.307Z",
+      "update_timestamp": "2022-11-13T16:33:04.157Z",
+      "exam": 4,
+      "order_num": 6,
+      "text": "Имя богатыря из города Мурома?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 41,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:30:55.308Z",
+      "update_timestamp": "2022-11-13T16:32:32.945Z",
+      "exam": 4,
+      "order_num": 7,
+      "text": "Плод, в котором было спрятано платье Золушки?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 42,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:30:55.309Z",
+      "update_timestamp": "2022-11-13T16:32:16.338Z",
+      "exam": 4,
+      "order_num": 8,
+      "text": "Горы, которые преодолели герои романа Жюля Верна?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 43,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:30:55.310Z",
+      "update_timestamp": "2022-11-13T16:31:45.561Z",
+      "exam": 4,
+      "order_num": 9,
+      "text": "Короткое сатирическое стихотворение на злободневное общественное событие или адресованное конкретному лицу?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 44,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:30:55.310Z",
+      "update_timestamp": "2022-11-13T16:31:23.616Z",
+      "exam": 4,
+      "order_num": 10,
+      "text": "Место жительства Водяного?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 1,
+   "fields": {
+      "create_timestamp": "2022-11-12T09:59:51.767Z",
+      "update_timestamp": "2022-11-12T09:59:51.767Z",
+      "question": 1,
+      "text": "1",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 2,
+   "fields": {
+      "create_timestamp": "2022-11-12T10:00:00.490Z",
+      "update_timestamp": "2022-11-12T10:00:00.490Z",
+      "question": 1,
+      "text": "2",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 3,
+   "fields": {
+      "create_timestamp": "2022-11-12T10:00:05.529Z",
+      "update_timestamp": "2022-11-12T10:00:05.529Z",
+      "question": 1,
+      "text": "3",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 4,
+   "fields": {
+      "create_timestamp": "2022-11-12T10:00:14.630Z",
+      "update_timestamp": "2022-11-12T10:00:14.630Z",
+      "question": 1,
+      "text": "4",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 5,
+   "fields": {
+      "create_timestamp": "2022-11-12T10:25:56.673Z",
+      "update_timestamp": "2022-11-12T10:25:56.673Z",
+      "question": 4,
+      "text": "1",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 6,
+   "fields": {
+      "create_timestamp": "2022-11-12T10:25:56.675Z",
+      "update_timestamp": "2022-11-12T10:25:56.675Z",
+      "question": 4,
+      "text": "5",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 7,
+   "fields": {
+      "create_timestamp": "2022-11-12T10:25:56.676Z",
+      "update_timestamp": "2022-11-12T10:25:56.676Z",
+      "question": 4,
+      "text": "9",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 8,
+   "fields": {
+      "create_timestamp": "2022-11-12T10:25:56.677Z",
+      "update_timestamp": "2022-11-12T10:25:56.677Z",
+      "question": 4,
+      "text": "101",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 9,
+   "fields": {
+      "create_timestamp": "2022-11-12T10:26:29.103Z",
+      "update_timestamp": "2022-11-12T10:26:29.103Z",
+      "question": 3,
+      "text": "25",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 10,
+   "fields": {
+      "create_timestamp": "2022-11-12T10:26:29.105Z",
+      "update_timestamp": "2022-11-12T10:26:29.105Z",
+      "question": 3,
+      "text": "45",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 11,
+   "fields": {
+      "create_timestamp": "2022-11-12T10:26:29.105Z",
+      "update_timestamp": "2022-11-12T10:26:29.105Z",
+      "question": 3,
+      "text": "100",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 12,
+   "fields": {
+      "create_timestamp": "2022-11-12T10:26:50.166Z",
+      "update_timestamp": "2022-11-12T10:26:50.166Z",
+      "question": 2,
+      "text": "6",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 13,
+   "fields": {
+      "create_timestamp": "2022-11-12T10:26:50.168Z",
+      "update_timestamp": "2022-11-12T10:26:50.168Z",
+      "question": 2,
+      "text": "9",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 14,
+   "fields": {
+      "create_timestamp": "2022-11-12T10:26:50.169Z",
+      "update_timestamp": "2022-11-12T10:26:50.169Z",
+      "question": 2,
+      "text": "12",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 15,
+   "fields": {
+      "create_timestamp": "2022-11-12T10:26:50.170Z",
+      "update_timestamp": "2022-11-12T10:26:50.170Z",
+      "question": 2,
+      "text": "1",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 16,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:26:30.129Z",
+      "update_timestamp": "2022-11-13T15:26:30.129Z",
+      "question": 5,
+      "text": "0",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 17,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:26:30.130Z",
+      "update_timestamp": "2022-11-13T15:26:30.130Z",
+      "question": 5,
+      "text": "1",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 18,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:26:30.131Z",
+      "update_timestamp": "2022-11-13T15:26:30.131Z",
+      "question": 5,
+      "text": "2",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 19,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:26:30.132Z",
+      "update_timestamp": "2022-11-13T15:26:30.132Z",
+      "question": 5,
+      "text": "3",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 20,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:27:01.275Z",
+      "update_timestamp": "2022-11-13T15:27:01.275Z",
+      "question": 12,
+      "text": "0",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 21,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:27:01.276Z",
+      "update_timestamp": "2022-11-13T15:27:01.276Z",
+      "question": 12,
+      "text": "1",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 22,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:27:01.277Z",
+      "update_timestamp": "2022-11-13T15:27:01.277Z",
+      "question": 12,
+      "text": "на 0 делить нельзя",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 23,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:27:19.553Z",
+      "update_timestamp": "2022-11-13T15:27:19.554Z",
+      "question": 11,
+      "text": "5",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 24,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:27:19.555Z",
+      "update_timestamp": "2022-11-13T15:27:19.555Z",
+      "question": 11,
+      "text": "6",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 25,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:27:19.556Z",
+      "update_timestamp": "2022-11-13T15:27:19.556Z",
+      "question": 11,
+      "text": "8",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 26,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:27:47.429Z",
+      "update_timestamp": "2022-11-13T15:27:47.429Z",
+      "question": 10,
+      "text": "295",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 27,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:27:47.430Z",
+      "update_timestamp": "2022-11-13T15:27:47.430Z",
+      "question": 10,
+      "text": "296",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 28,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:27:47.431Z",
+      "update_timestamp": "2022-11-13T15:27:47.431Z",
+      "question": 10,
+      "text": "300",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 29,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:28:10.899Z",
+      "update_timestamp": "2022-11-13T15:28:10.899Z",
+      "question": 9,
+      "text": "44",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 30,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:28:10.900Z",
+      "update_timestamp": "2022-11-13T15:28:10.900Z",
+      "question": 9,
+      "text": "88",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 31,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:28:10.901Z",
+      "update_timestamp": "2022-11-13T15:28:10.901Z",
+      "question": 9,
+      "text": "48",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 32,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:28:33.138Z",
+      "update_timestamp": "2022-11-13T15:28:33.138Z",
+      "question": 8,
+      "text": "нет решения",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 33,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:28:33.140Z",
+      "update_timestamp": "2022-11-13T15:28:33.140Z",
+      "question": 8,
+      "text": "0",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 34,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:28:33.141Z",
+      "update_timestamp": "2022-11-13T15:28:33.141Z",
+      "question": 8,
+      "text": "1",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 35,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:29:01.667Z",
+      "update_timestamp": "2022-11-13T15:29:01.667Z",
+      "question": 7,
+      "text": "225",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 36,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:29:01.669Z",
+      "update_timestamp": "2022-11-13T15:29:01.670Z",
+      "question": 7,
+      "text": "525",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 37,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:29:01.671Z",
+      "update_timestamp": "2022-11-13T15:29:01.671Z",
+      "question": 7,
+      "text": "625",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 38,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:29:20.247Z",
+      "update_timestamp": "2022-11-13T15:29:20.247Z",
+      "question": 6,
+      "text": "625",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 39,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:29:20.249Z",
+      "update_timestamp": "2022-11-13T15:29:20.249Z",
+      "question": 6,
+      "text": "125",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 40,
+   "fields": {
+      "create_timestamp": "2022-11-13T15:29:20.250Z",
+      "update_timestamp": "2022-11-13T15:29:20.250Z",
+      "question": 6,
+      "text": "1000",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 41,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:06:59.481Z",
+      "update_timestamp": "2022-11-13T16:06:59.481Z",
+      "question": 22,
+      "text": "Воздушное",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 42,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:06:59.482Z",
+      "update_timestamp": "2022-11-13T16:06:59.482Z",
+      "question": 22,
+      "text": "Электронное",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 43,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:06:59.483Z",
+      "update_timestamp": "2022-11-13T16:06:59.483Z",
+      "question": 22,
+      "text": "Гравитационное",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 44,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:07:30.451Z",
+      "update_timestamp": "2022-11-13T16:07:30.451Z",
+      "question": 21,
+      "text": "Сжиженный водород",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 45,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:07:30.452Z",
+      "update_timestamp": "2022-11-13T16:07:30.453Z",
+      "question": 21,
+      "text": "Этил",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 46,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:07:30.453Z",
+      "update_timestamp": "2022-11-13T16:07:30.453Z",
+      "question": 21,
+      "text": "Водород",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 47,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:07:30.454Z",
+      "update_timestamp": "2022-11-13T16:07:30.454Z",
+      "question": 21,
+      "text": "Гексород",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 48,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:08:10.083Z",
+      "update_timestamp": "2022-11-13T16:08:10.083Z",
+      "question": 20,
+      "text": "Каучук",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 49,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:08:10.085Z",
+      "update_timestamp": "2022-11-13T16:08:10.085Z",
+      "question": 20,
+      "text": "Титан",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 50,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:08:10.087Z",
+      "update_timestamp": "2022-11-13T16:08:10.087Z",
+      "question": 20,
+      "text": "Чугун",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 51,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:08:10.088Z",
+      "update_timestamp": "2022-11-13T16:08:10.088Z",
+      "question": 20,
+      "text": "Золото",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 52,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:08:10.089Z",
+      "update_timestamp": "2022-11-13T16:08:10.089Z",
+      "question": 20,
+      "text": "Вольфрам",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 53,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:08:49.907Z",
+      "update_timestamp": "2022-11-13T16:08:49.908Z",
+      "question": 19,
+      "text": "Градусник",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 54,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:08:49.909Z",
+      "update_timestamp": "2022-11-13T16:08:49.909Z",
+      "question": 19,
+      "text": "Термометр Фаренгейта в 18 веке",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 55,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:08:49.910Z",
+      "update_timestamp": "2022-11-13T16:08:49.910Z",
+      "question": 19,
+      "text": "Ареометр",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 56,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:08:49.911Z",
+      "update_timestamp": "2022-11-13T16:08:49.911Z",
+      "question": 19,
+      "text": "Гидрометр",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 57,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:09:29.080Z",
+      "update_timestamp": "2022-11-13T16:09:29.080Z",
+      "question": 18,
+      "text": "Инфракрасный лазер",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 58,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:09:29.081Z",
+      "update_timestamp": "2022-11-13T16:09:29.081Z",
+      "question": 18,
+      "text": "Плазменный лазер",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 59,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:09:29.082Z",
+      "update_timestamp": "2022-11-13T16:09:29.083Z",
+      "question": 18,
+      "text": "Лазер",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 60,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:09:29.084Z",
+      "update_timestamp": "2022-11-13T16:09:29.084Z",
+      "question": 18,
+      "text": "Луч",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 61,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:09:49.383Z",
+      "update_timestamp": "2022-11-13T16:09:49.383Z",
+      "question": 17,
+      "text": "Воздух",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 62,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:09:49.384Z",
+      "update_timestamp": "2022-11-13T16:09:49.384Z",
+      "question": 17,
+      "text": "Огонь",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 63,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:09:49.386Z",
+      "update_timestamp": "2022-11-13T16:09:49.386Z",
+      "question": 17,
+      "text": "Вода",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 64,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:09:49.387Z",
+      "update_timestamp": "2022-11-13T16:09:49.387Z",
+      "question": 17,
+      "text": "Земля",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 65,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:11:13.484Z",
+      "update_timestamp": "2022-11-13T16:11:13.484Z",
+      "question": 16,
+      "text": "Сэр Исаак Ньютон",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 66,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:11:13.485Z",
+      "update_timestamp": "2022-11-13T16:11:13.485Z",
+      "question": 16,
+      "text": "Дмитрий Иванович Менделеев",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 67,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:11:13.486Z",
+      "update_timestamp": "2022-11-13T16:11:13.486Z",
+      "question": 16,
+      "text": "Альберт Энштейн",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 68,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:11:13.487Z",
+      "update_timestamp": "2022-11-13T16:11:13.487Z",
+      "question": 16,
+      "text": "Иван Ползунов",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 69,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:11:13.487Z",
+      "update_timestamp": "2022-11-13T16:11:13.488Z",
+      "question": 16,
+      "text": "Никола Тесла",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 70,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:12:22.978Z",
+      "update_timestamp": "2022-11-13T16:12:22.978Z",
+      "question": 15,
+      "text": "Космической пыли",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 71,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:12:22.980Z",
+      "update_timestamp": "2022-11-13T16:12:22.980Z",
+      "question": 15,
+      "text": "Испарения воды",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 72,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:12:22.980Z",
+      "update_timestamp": "2022-11-13T16:12:22.981Z",
+      "question": 15,
+      "text": "Рождаемость млекопитающих",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 73,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:12:22.981Z",
+      "update_timestamp": "2022-11-13T16:12:22.981Z",
+      "question": 15,
+      "text": "Глобальное потепление",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 74,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:13:34.779Z",
+      "update_timestamp": "2022-11-13T16:13:34.780Z",
+      "question": 14,
+      "text": "Волович Анастасия Игоревна",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 75,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:13:34.781Z",
+      "update_timestamp": "2022-11-13T16:13:34.781Z",
+      "question": 14,
+      "text": "Харрисон Фиона",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 76,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:13:34.782Z",
+      "update_timestamp": "2022-11-13T16:13:34.782Z",
+      "question": 14,
+      "text": "Мария Склодовская–Кюри",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 77,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:13:34.783Z",
+      "update_timestamp": "2022-11-13T16:13:34.783Z",
+      "question": 14,
+      "text": "Леманн Инге",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 78,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:14:35.144Z",
+      "update_timestamp": "2022-11-13T16:14:35.144Z",
+      "question": 13,
+      "text": "Галилео Галилей",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 79,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:14:35.145Z",
+      "update_timestamp": "2022-11-13T16:14:35.146Z",
+      "question": 13,
+      "text": "Джеймс Клерк Максвелл",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 80,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:14:35.146Z",
+      "update_timestamp": "2022-11-13T16:14:35.146Z",
+      "question": 13,
+      "text": "Мария Саломея Склодовская-Кюри",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 81,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:14:35.147Z",
+      "update_timestamp": "2022-11-13T16:14:35.147Z",
+      "question": 13,
+      "text": "Вильгельм Рентген",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 82,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:19:01.301Z",
+      "update_timestamp": "2022-11-13T16:19:01.301Z",
+      "question": 34,
+      "text": "Пустыня",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 83,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:19:01.302Z",
+      "update_timestamp": "2022-11-13T16:19:01.303Z",
+      "question": 34,
+      "text": "Океан",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 84,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:19:01.303Z",
+      "update_timestamp": "2022-11-13T16:19:01.303Z",
+      "question": 34,
+      "text": "Море",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 85,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:19:01.304Z",
+      "update_timestamp": "2022-11-13T16:19:01.304Z",
+      "question": 34,
+      "text": "Озеро",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 86,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:19:28.014Z",
+      "update_timestamp": "2022-11-13T16:19:28.014Z",
+      "question": 33,
+      "text": "Стратосфера",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 87,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:19:28.015Z",
+      "update_timestamp": "2022-11-13T16:19:28.015Z",
+      "question": 33,
+      "text": "Гидросфера",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 88,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:19:28.016Z",
+      "update_timestamp": "2022-11-13T16:19:28.016Z",
+      "question": 33,
+      "text": "Атмосфера",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 89,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:19:28.017Z",
+      "update_timestamp": "2022-11-13T16:19:28.017Z",
+      "question": 33,
+      "text": "Оазис",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 90,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:19:53.614Z",
+      "update_timestamp": "2022-11-13T16:19:53.614Z",
+      "question": 32,
+      "text": "Антициклон",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 91,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:19:53.615Z",
+      "update_timestamp": "2022-11-13T16:19:53.615Z",
+      "question": 32,
+      "text": "Циклон",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 92,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:19:53.616Z",
+      "update_timestamp": "2022-11-13T16:19:53.616Z",
+      "question": 32,
+      "text": "Ураган",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 93,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:19:53.617Z",
+      "update_timestamp": "2022-11-13T16:19:53.617Z",
+      "question": 32,
+      "text": "Холодный фронт",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 94,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:21:02.682Z",
+      "update_timestamp": "2022-11-13T16:21:02.682Z",
+      "question": 31,
+      "text": "Адресант",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 95,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:21:02.684Z",
+      "update_timestamp": "2022-11-13T16:21:02.684Z",
+      "question": 31,
+      "text": "Страна",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 96,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:21:02.685Z",
+      "update_timestamp": "2022-11-13T16:21:02.685Z",
+      "question": 31,
+      "text": "Индекс",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 97,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:21:02.685Z",
+      "update_timestamp": "2022-11-13T16:21:02.685Z",
+      "question": 31,
+      "text": "Адрес",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 98,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:21:27.181Z",
+      "update_timestamp": "2022-11-13T16:21:27.181Z",
+      "question": 30,
+      "text": "Глобус",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 99,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:21:27.182Z",
+      "update_timestamp": "2022-11-13T16:21:27.183Z",
+      "question": 30,
+      "text": "Планета",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 100,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:21:27.183Z",
+      "update_timestamp": "2022-11-13T16:21:27.183Z",
+      "question": 30,
+      "text": "Остров",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 101,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:21:27.184Z",
+      "update_timestamp": "2022-11-13T16:21:27.185Z",
+      "question": 30,
+      "text": "Шарик",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 102,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:22:02.231Z",
+      "update_timestamp": "2022-11-13T16:22:02.231Z",
+      "question": 29,
+      "text": "Средиземном море",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 103,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:22:02.233Z",
+      "update_timestamp": "2022-11-13T16:22:02.233Z",
+      "question": 29,
+      "text": "Красном море",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 104,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:22:02.234Z",
+      "update_timestamp": "2022-11-13T16:22:02.234Z",
+      "question": 29,
+      "text": "Желтом море",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 105,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:22:02.235Z",
+      "update_timestamp": "2022-11-13T16:22:02.235Z",
+      "question": 29,
+      "text": "Карибском море",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 106,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:22:39.875Z",
+      "update_timestamp": "2022-11-13T16:22:39.875Z",
+      "question": 28,
+      "text": "Путеводитель",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 107,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:22:39.877Z",
+      "update_timestamp": "2022-11-13T16:22:39.877Z",
+      "question": 28,
+      "text": "Энциклопедия",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 108,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:22:39.878Z",
+      "update_timestamp": "2022-11-13T16:22:39.878Z",
+      "question": 28,
+      "text": "Библиотека",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 109,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:22:39.879Z",
+      "update_timestamp": "2022-11-13T16:22:39.879Z",
+      "question": 28,
+      "text": "Интернет",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 110,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:22:39.880Z",
+      "update_timestamp": "2022-11-13T16:22:39.880Z",
+      "question": 28,
+      "text": "Google",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 111,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:23:03.902Z",
+      "update_timestamp": "2022-11-13T16:23:03.902Z",
+      "question": 26,
+      "text": "Дворец",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 112,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:23:03.904Z",
+      "update_timestamp": "2022-11-13T16:23:03.904Z",
+      "question": 26,
+      "text": "Особняк",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 113,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:23:03.905Z",
+      "update_timestamp": "2022-11-13T16:23:03.905Z",
+      "question": 26,
+      "text": "Дача",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 114,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:23:03.906Z",
+      "update_timestamp": "2022-11-13T16:23:03.906Z",
+      "question": 26,
+      "text": "Фазенда",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 115,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:23:38.927Z",
+      "update_timestamp": "2022-11-13T16:23:38.927Z",
+      "question": 27,
+      "text": "Круиз",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 116,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:23:38.928Z",
+      "update_timestamp": "2022-11-13T16:23:38.928Z",
+      "question": 27,
+      "text": "Турне",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 117,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:23:38.929Z",
+      "update_timestamp": "2022-11-13T16:23:38.929Z",
+      "question": 27,
+      "text": "Экскурсия",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 118,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:23:38.930Z",
+      "update_timestamp": "2022-11-13T16:23:38.930Z",
+      "question": 27,
+      "text": "Путешествие",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 119,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:24:45.321Z",
+      "update_timestamp": "2022-11-13T16:24:45.321Z",
+      "question": 25,
+      "text": "Эйр",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 120,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:24:45.322Z",
+      "update_timestamp": "2022-11-13T16:24:45.322Z",
+      "question": 25,
+      "text": "Байкал",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 121,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:24:45.324Z",
+      "update_timestamp": "2022-11-13T16:24:45.324Z",
+      "question": 25,
+      "text": "Ладожское озеро",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 122,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:24:45.325Z",
+      "update_timestamp": "2022-11-13T16:24:45.325Z",
+      "question": 25,
+      "text": "Виктория",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 123,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:24:45.326Z",
+      "update_timestamp": "2022-11-13T16:24:45.326Z",
+      "question": 25,
+      "text": "Маракайбо",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 124,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:25:13.058Z",
+      "update_timestamp": "2022-11-13T16:25:13.058Z",
+      "question": 24,
+      "text": "Африка",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 125,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:25:13.060Z",
+      "update_timestamp": "2022-11-13T16:25:13.060Z",
+      "question": 24,
+      "text": "Азия",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 126,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:25:13.061Z",
+      "update_timestamp": "2022-11-13T16:25:13.061Z",
+      "question": 24,
+      "text": "Эвропа",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 127,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:25:13.062Z",
+      "update_timestamp": "2022-11-13T16:25:13.062Z",
+      "question": 24,
+      "text": "Антарктиде",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 128,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:26:06.804Z",
+      "update_timestamp": "2022-11-13T16:26:06.804Z",
+      "question": 23,
+      "text": "Тихий окена",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 129,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:26:06.805Z",
+      "update_timestamp": "2022-11-13T16:26:06.805Z",
+      "question": 23,
+      "text": "Атлантический окена",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 130,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:26:06.806Z",
+      "update_timestamp": "2022-11-13T16:26:06.806Z",
+      "question": 23,
+      "text": "Индийский окена",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 131,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:26:06.807Z",
+      "update_timestamp": "2022-11-13T16:26:06.807Z",
+      "question": 23,
+      "text": "СеверныйЛедовитый окена",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 132,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:31:23.619Z",
+      "update_timestamp": "2022-11-13T16:31:23.619Z",
+      "question": 44,
+      "text": "Лягушатник",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 133,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:31:23.620Z",
+      "update_timestamp": "2022-11-13T16:31:23.620Z",
+      "question": 44,
+      "text": "Дом",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 134,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:31:23.621Z",
+      "update_timestamp": "2022-11-13T16:31:23.621Z",
+      "question": 44,
+      "text": "Болото",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 135,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:31:23.622Z",
+      "update_timestamp": "2022-11-13T16:31:23.622Z",
+      "question": 44,
+      "text": "Озеро",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 136,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:31:45.564Z",
+      "update_timestamp": "2022-11-13T16:31:45.564Z",
+      "question": 43,
+      "text": "Эпиграмма",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 137,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:31:45.565Z",
+      "update_timestamp": "2022-11-13T16:31:45.565Z",
+      "question": 43,
+      "text": "Сатира",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 138,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:31:45.566Z",
+      "update_timestamp": "2022-11-13T16:31:45.566Z",
+      "question": 43,
+      "text": "Роман",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 139,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:31:45.567Z",
+      "update_timestamp": "2022-11-13T16:31:45.568Z",
+      "question": 43,
+      "text": "Эпизод",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 140,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:32:16.340Z",
+      "update_timestamp": "2022-11-13T16:32:16.341Z",
+      "question": 42,
+      "text": "Гималаи",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 141,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:32:16.342Z",
+      "update_timestamp": "2022-11-13T16:32:16.342Z",
+      "question": 42,
+      "text": "Анды",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 142,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:32:16.344Z",
+      "update_timestamp": "2022-11-13T16:32:16.344Z",
+      "question": 42,
+      "text": "Эверест",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 143,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:32:16.345Z",
+      "update_timestamp": "2022-11-13T16:32:16.345Z",
+      "question": 42,
+      "text": "Карпаты",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 144,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:32:32.948Z",
+      "update_timestamp": "2022-11-13T16:32:32.948Z",
+      "question": 41,
+      "text": "Орех",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 145,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:32:32.949Z",
+      "update_timestamp": "2022-11-13T16:32:32.949Z",
+      "question": 41,
+      "text": "Желудь",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 146,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:32:32.950Z",
+      "update_timestamp": "2022-11-13T16:32:32.950Z",
+      "question": 41,
+      "text": "Фисташка",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 147,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:33:04.159Z",
+      "update_timestamp": "2022-11-13T16:33:04.159Z",
+      "question": 40,
+      "text": "Бугай",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 148,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:33:04.161Z",
+      "update_timestamp": "2022-11-13T16:33:04.161Z",
+      "question": 40,
+      "text": "Олег",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 149,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:33:04.162Z",
+      "update_timestamp": "2022-11-13T16:33:04.162Z",
+      "question": 40,
+      "text": "Кирилл",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 150,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:33:04.163Z",
+      "update_timestamp": "2022-11-13T16:33:04.163Z",
+      "question": 40,
+      "text": "Илья",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 151,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:33:59.732Z",
+      "update_timestamp": "2022-11-13T16:33:59.732Z",
+      "question": 39,
+      "text": "Миф",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 152,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:33:59.733Z",
+      "update_timestamp": "2022-11-13T16:33:59.733Z",
+      "question": 39,
+      "text": "История",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 153,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:33:59.734Z",
+      "update_timestamp": "2022-11-13T16:33:59.734Z",
+      "question": 39,
+      "text": "Рассказ",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 154,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:35:02.870Z",
+      "update_timestamp": "2022-11-13T16:35:02.870Z",
+      "question": 38,
+      "text": "А. С. Пушкин",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 155,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:35:02.872Z",
+      "update_timestamp": "2022-11-13T16:35:02.872Z",
+      "question": 38,
+      "text": "А. И. Куприн.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 156,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:35:02.874Z",
+      "update_timestamp": "2022-11-13T16:35:02.874Z",
+      "question": 38,
+      "text": "Л. Н. Толстой",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 157,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:35:02.875Z",
+      "update_timestamp": "2022-11-13T16:35:02.875Z",
+      "question": 38,
+      "text": "И. С. Тургенев",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 158,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:35:28.507Z",
+      "update_timestamp": "2022-11-13T16:35:28.507Z",
+      "question": 37,
+      "text": "Скрудж",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 159,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:35:28.508Z",
+      "update_timestamp": "2022-11-13T16:35:28.508Z",
+      "question": 37,
+      "text": "Донатело",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 160,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:35:28.509Z",
+      "update_timestamp": "2022-11-13T16:35:28.509Z",
+      "question": 37,
+      "text": "Том",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 161,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:35:28.510Z",
+      "update_timestamp": "2022-11-13T16:35:28.510Z",
+      "question": 37,
+      "text": "Джерри",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 162,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:35:55.119Z",
+      "update_timestamp": "2022-11-13T16:35:55.120Z",
+      "question": 36,
+      "text": "Поема",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 163,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:35:55.121Z",
+      "update_timestamp": "2022-11-13T16:35:55.121Z",
+      "question": 36,
+      "text": "Пьеса",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 164,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:35:55.122Z",
+      "update_timestamp": "2022-11-13T16:35:55.122Z",
+      "question": 36,
+      "text": "Басня",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 165,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:35:55.123Z",
+      "update_timestamp": "2022-11-13T16:35:55.123Z",
+      "question": 36,
+      "text": "Сказка",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 166,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:36:28.430Z",
+      "update_timestamp": "2022-11-13T16:36:28.430Z",
+      "question": 35,
+      "text": "Алладин",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 167,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:36:28.432Z",
+      "update_timestamp": "2022-11-13T16:36:28.432Z",
+      "question": 35,
+      "text": "Пароль",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 168,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:36:28.433Z",
+      "update_timestamp": "2022-11-13T16:36:28.433Z",
+      "question": 35,
+      "text": "Откройся",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 169,
+   "fields": {
+      "create_timestamp": "2022-11-13T16:36:28.434Z",
+      "update_timestamp": "2022-11-13T16:36:28.434Z",
+      "question": 35,
+      "text": "Сезам",
+      "is_correct": true
+   }
+}
+]
