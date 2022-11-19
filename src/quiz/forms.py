@@ -6,11 +6,29 @@ from .models import Choice
 
 class QuestionInlineFormSet(forms.BaseInlineFormSet):
     def clean(self):
-        if not (self.instance.QUESTION_MIN_LIMIT <= len(self.forms) <= self.instance.QUESTION_MAX_LIMIT):
+        questions = [form for form in self.forms if form['DELETE'].value() is False]
+
+        if not (self.instance.QUESTION_MIN_LIMIT <= len(questions) <= self.instance.QUESTION_MAX_LIMIT):
             raise ValidationError(
                 f'Questions count must be range '
                 f'from {self.instance.QUESTION_MIN_LIMIT} '
                 f'to {self.instance.QUESTION_MAX_LIMIT} inclusive'
+            )
+
+        order_nums = {int(form['order_num'].value()) for form in questions}
+        if len(order_nums) != len(questions):
+            raise ValidationError(
+                'Found duplication of order num.'
+            )
+        max_order_num = max(order_nums)
+        min_order_num = min(order_nums)
+        if max_order_num > self.instance.QUESTION_MAX_LIMIT:
+            raise ValidationError(
+                f'Max order_num should be less than or equal {self.instance.QUESTION_MAX_LIMIT}'
+            )
+        if min_order_num != 1 or order_nums != {value for value in range(min_order_num, max_order_num + 1)}:
+            raise ValidationError(
+                'All order_nums should be in sequential order (1, 2, 3, 4, ...).'
             )
 
 

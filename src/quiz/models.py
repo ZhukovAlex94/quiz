@@ -37,6 +37,39 @@ class Exam(BaseModel):
         verbose_name = 'Exam'
         verbose_name_plural = 'Exams'
 
+    def best_result(self):
+        result = (
+            Result
+            .objects
+            .filter(exam_id=self.id)
+            .order_by('num_correct_answers')
+            .reverse()
+            .first()
+        )
+        return 0 if result is None else result.num_correct_answers
+
+    def best_user(self):
+        user = (
+            Result
+            .objects
+            .filter(exam_id=self.id)
+            .order_by('user_id')
+            .reverse()
+            .first()
+        )
+        return 'No best user' if user is None else user.user
+
+    def last_run(self):
+        last = (
+            Result
+            .objects
+            .filter(exam_id=self.id)
+            .order_by('update_timestamp')
+            .reverse()
+            .first()
+        )
+        return 'Not yet started' if last is None else last.update_timestamp
+
 
 class Question(BaseModel):
     exam = models.ForeignKey(Exam, on_delete=models.CASCADE, related_name='questions')
