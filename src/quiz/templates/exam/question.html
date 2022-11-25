@@ -8,19 +8,20 @@
 
 {% block header %}
     {{ question.order_num }}) {{ question.text }}
-{#    {% with question.order_num|add:-1|multi:100|dived:question.exam.questions_count as level %}#}
+    {#    {% with question.order_num|add:-1|multi:100|dived:question.exam.questions_count as level %}#}
     {% expression '(%1 - 1) * 100 // %2' question.order_num question.exam.questions_count as level %}
-        <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated"
-                 role="progressbar"
-                 aria-label="Animated striped example"
-                 aria-valuenow="{{ level }}"
-                 style="width: {{ level }}%"
-                 aria-valuemin="0"
-                 aria-valuemax="100"
-            >{{ level }}%</div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated"
+             role="progressbar"
+             aria-label="Animated striped example"
+             aria-valuenow="{{ level }}"
+             style="width: {{ level }}%"
+             aria-valuemin="0"
+             aria-valuemax="100"
+        >{{ level }}%
         </div>
-{#    {% endwith %}#}
+    </div>
+    {#    {% endwith %}#}
 {% endblock %}
 
 {% block content %}
@@ -30,9 +31,10 @@
             {{ choices.management_form }}
             {% for form in choices %}
                 <div class="mt-1">
-                    {{ form.is_selected }} <label for="{{ form.is_selected.id_for_label }}">
-                    {{ form.text.value }}
-                </label>
+                    {{ form.is_selected }}
+                    <label for="{{ form.is_selected.id_for_label }}">
+                        {{ form.text.value }}
+                    </label>
                 </div>
             {% endfor %}
             <button type="submit" class="btn btn-outline-success mt-5">Next ></button>
