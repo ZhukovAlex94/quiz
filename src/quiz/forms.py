@@ -62,23 +62,10 @@ class ChoiceForm(forms.ModelForm):
         fields = ('text',)
 
 
-class BaseChoicesFormSet(forms.BaseModelFormSet):
-    def clean(self):
-        super().clean()
-        num_correct_answers = sum(form.cleaned_data['is_correct'] for form in self.forms)
-
-        if num_correct_answers == 0:
-            raise ValidationError('Need to choose one option minimum')
-
-        if num_correct_answers == len(self.forms):
-            raise ValidationError('It is not allowed to select all options')
-        print(self)
-
-
 ChoicesFormSet = forms.modelformset_factory(
     Choice,
     form=ChoiceForm,
     extra=0,
-    formset=BaseChoicesFormSet,
+    # formset=BaseChoicesFormSet,
     # fields=('is_correct',)
 )

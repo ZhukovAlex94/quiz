@@ -26,6 +26,15 @@
 
 {% block content %}
     <div class="container">
+        {% if 'error' in request.GET %}
+            <div class="alert alert-danger" role="alert">
+                {% if request.GET.error == "all" %}
+                    Can not select all answers.
+                {% else %}
+                    Select at least one answer.
+                {% endif %}
+            </div>
+        {% endif %}
         <form method="post" autocomplete="off">
             {% csrf_token %}
             {{ choices.management_form }}
