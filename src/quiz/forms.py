@@ -63,7 +63,9 @@ class ChoiceForm(forms.ModelForm):
 
 
 ChoicesFormSet = forms.modelformset_factory(
-    model=Choice,
+    Choice,
     form=ChoiceForm,
-    extra=0
+    extra=0,
+    # formset=BaseChoicesFormSet,
+    # fields=('is_correct',)
 )

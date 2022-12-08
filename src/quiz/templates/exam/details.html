@@ -63,7 +63,7 @@
                     <tr>
                         <td>{{ forloop.counter }}</td>
                         <td>{{ result.create_timestamp|date:'d-M-Y H:i' }}</td>
-                        <td>HA</td>
+                        <td>{{ result.points }}</td>
                         <td>{{ result.get_state_display }}</td>
                         <td>
                             {% if result.state == result.STATE.NEW %}
@@ -71,7 +71,8 @@
                                    href="{% url 'quiz:result_update' exam.uuid result.uuid %}">
                                     Continue
                                 </a>
-                                <a class="btn btn-outline-danger" href="#">
+                                <a class="btn btn-outline-danger"
+                                   href="{% url 'quiz:delete' exam.uuid result.uuid %}">
                                     Remove
                                 </a>
                             {% else %}

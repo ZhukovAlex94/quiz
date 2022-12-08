@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Delete exam{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-3"></div>
+            <div class="col">
+                <form method="post">
+                    {% csrf_token %}
+                    <p>Do you really want to remove selected test?</p>
+                    <input class="btn btn-outline-danger mt-3 btn-sm" type="submit" value="Agree">
+                    <a class="btn btn-outline-success mt-3 btn-sm" href="{% url 'quiz:details' uuid=result.exam.uuid %}">Cancel</a>
+                </form>
+            </div>
+        <div class="col-3"></div>
+    </div>
+{% endblock %}

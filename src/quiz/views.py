@@ -99,6 +99,20 @@ class ExamResultQuestionView(LoginRequiredMixin, UpdateView):
         selected_choices = ['is_selected' in form.changed_data for form in choices.forms]
 
         result = Result.objects.get(uuid=res_uuid)
+
+        none_set = all(not choice for choice in selected_choices)
+        all_set = all(selected_choices)
+        if none_set or all_set:
+            return HttpResponseRedirect(
+                reverse(
+                    'quiz:question',
+                    kwargs={
+                        'uuid': uuid,
+                        'res_uuid': result.uuid
+                    }
+                ) + ("?error=all" if all_set else "?error=none")
+            )
+
         result.update_result(order_num, question, selected_choices)
 
         if result.state == Result.STATE.FINISHED:
@@ -140,13 +154,13 @@ class ExamResultUpdateView(LoginRequiredMixin, UpdateView):
     def get(self, request, *args, **kwargs):
         uuid = kwargs.get('uuid')
         res_uuid = kwargs.get('res_uuid')
-        user = request.user
+        # user = request.user
 
-        result = Result.objects.get(
-            user=user,
-            uuid=res_uuid,
-            # exam__uuid=uuid,
-        )
+        # result = Result.objects.get(
+        #     user=user,
+        #     uuid=res_uuid,
+        #     # exam__uuid=uuid,
+        # )
 
         return HttpResponseRedirect(
             reverse(
@@ -161,4 +175,15 @@ class ExamResultUpdateView(LoginRequiredMixin, UpdateView):
 
 
 class ExamResultDeleteView(LoginRequiredMixin, DeleteView):
-    pass
+    model = Result
+    template_name = 'result/delete.html'
+
+    def get_object(self, queryset=None):
+        uuid = self.kwargs.get('res_uuid')
+
+        return self.get_queryset().get(uuid=uuid)
+
+    def get_success_url(self):
+        uuid = self.kwargs.get('uuid')
+
+        return reverse('quiz:details', kwargs={'uuid': uuid})
