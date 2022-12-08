@@ -32,4 +32,4 @@ jobs:
         DJANGO_ALLOWED_HOSTS: ${{ secrets.DJANGO_ALLOWED_HOSTS }}
       run: |
         cd src
-        python manage.py test
+        python manage.py test --settings=app.settings_dev
