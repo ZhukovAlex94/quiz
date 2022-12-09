@@ -2,17 +2,15 @@ version: "3.8"
 
 services:
   web:
-    build: .
-    # platform: linux/amd64
-    # image: zhukovalex94/web_service:latest
+    image: zhukovalex94/web_service:0.0.1
     container_name: web_service
 #    command: python manage.py runserver 0.0.0.0:8890
     command: gunicorn app.wsgi:application --workers 4 --bind 0.0.0.0:8890
     volumes:
       - static_volume:/opt/src/static
       - media_volume:/opt/src/media
-    ports:
-      - "8890:8890"
+#    ports:
+#      - "8890:8890"
     env_file:
       - .env
     depends_on:
@@ -41,9 +39,7 @@ services:
     restart: always
 
   nginx:
-    build: ./nginx
-    #    platform: linux/amd64
-    #    image: nkiseev/nginx_service:latest
+    image: zhukovalex94/nginx_service:0.0.1
     container_name: nginx_service
     volumes:
       - static_volume:/opt/src/static
