@@ -1,16 +1,17 @@
-from datetime import timedelta, time, datetime
+from datetime import datetime, time, timedelta
 
 from django.core.mail import mail_admins
 from django.core.management import BaseCommand
 from django.utils import timezone
 from django.utils.timezone import make_aware
+
 from prettytable import PrettyTable
 
 from quiz.models import Result
 
 
 class Command(BaseCommand):
-    help = "Send Today's Report to Admins"
+    help = "Send Today's Report to Admins"  # noqa
 
     def handle(self, *args, **options):
         today_start = make_aware(datetime.combine(timezone.now(), time()))
