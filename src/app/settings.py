@@ -35,6 +35,7 @@ SECRET_KEY = environ['DJANGO_SECRET_KEY']
 DEBUG = environ['DJANGO_DEBUG'].lower() in ['true', '1', 'on']
 
 ALLOWED_HOSTS = environ['DJANGO_ALLOWED_HOSTS'].split()
+CSRF_TRUSTED_ORIGINS = environ['DJANGO_CSRF_TRUSTED_ORIGINS'].split()
 
 
 # Application definition
