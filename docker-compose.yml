@@ -14,7 +14,7 @@ services:
 #    ports:
 #      - "8890:8890"
     env_file:
-      - .env
+      - src/.env
     depends_on:
       db:
         condition: service_healthy
@@ -33,7 +33,7 @@ services:
     ports:
       - "5435:5432"
     env_file:
-      - .env
+      - src/.env
     healthcheck:
       test: [ "CMD", "pg_isready", "-U", "postgres" ]
       interval: 5s
@@ -70,7 +70,7 @@ services:
     ports:
       - "5672:5672"
     env_file:
-      - .env
+      - src/.env
     restart: always
 
   worker: # celery
@@ -80,7 +80,7 @@ services:
     volumes:
       - src_volume:/opt/src
     env_file:
-      - .env
+      - src/.env
     depends_on:
       - broker
       - backend
@@ -92,7 +92,7 @@ services:
     volumes:
       - src_volume:/opt/src
     env_file:
-      - .env
+      - src/.env
     depends_on:
       - broker
       - backend
